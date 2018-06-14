@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="医生联盟">
+    <meta name="author" content="医生联盟">
+    <title>医生联盟 - 联系我们</title>
+    <!-- Bootstrap -->
+    <link href="src/bootstrap.min.css?ver=3.3.7" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="src/product.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.4.6&key=c427af984ee91c8c1d576723b7f097ac&plugin=AMap.AdvancedInfoWindow"></script>
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="page">
+    <!-- main-header -->
+    <header class="main-header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid navbar-main container">
+                <div class="navbar-header">
+                    <!-- navbar-toggle -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/" rel="home"></a>
+                </div>
+                <!--navbar-collapse-->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href='index.html' class="menu_index">首页</a></li>
+                        <li><a href='wisdom.html' class="menu_wisdom">智慧医院</a></li>
+                        <li><a href='doctor.html' class="menu_doctor">医生资源</a></li>
+                        <li><a href='culture.html' class="menu_culture">企业文化</a></li>
+                        <li class="active"><a href='contact.html' class="menu_contact">联系我们</a></li>
+                    </ul>
+                    <a class="navbar-tel" rel="023-68889158"><span>023-68889158</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main-content -->
+    <div class="main-content">
+        <div class="jumbotron" style="padding: 0;background-color: transparent;">
+            <div class="top"><img src="img/contact-tt.png"></div>
+            <div class="container">
+                <div class="contact">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="message">
+                                <img src="img/contactus.png">
+                                <h2>重庆医盟健康管理有限公司</h2>
+                                <p>
+                                    联系电话：023-65813888<br>
+                                    商务热线：023-65813888<br>
+                                    Email：XXXXXXX@XX.com
+                                </p>
+                                <h3>公司地址：重庆市渝北区百灵路盛世银座a区5幢14楼</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 map">
+                            <div id="map"></div>
+                            <style type="text/css">
+                                .info-title {
+                                    color: white;
+                                    font-size: 14px;
+                                    background-color:#133c8b;
+                                    line-height: 26px;
+                                    padding: 0px 0 0 6px;
+                                    font-weight: lighter;
+                                    letter-spacing: 1px
+                                }
+                                .info-content {
+                                    font: 12px Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial;
+                                    padding: 4px;
+                                    color: #666666;
+                                    line-height: 23px;
+                                }
+                                .info-content img {
+                                    float: left;
+                                    margin: 3px;
+                                    width: 44px;
+                                }
+                            </style>
+                            <script>
+                                var lnglat = [106.48948, 29.583863];
+                                var map = new AMap.Map('map', {
+                                    resizeEnable: true,
+                                    zoom: 30,
+                                    center: lnglat
+                                });
+                                var marker = new AMap.Marker({
+                                    position: lnglat
+                                });
+                                marker.setMap(map);
+                                var content='<div class="info-title">重庆医盟健康管理有限公司</div><div class="info-content">' + '<img src="http://webapi.amap.com/images/amap.jpg">' +
+                                        '高德是中国领先的数字地图内容、导航和位置服务解决方案提供商。<br/>' + '</div>';
+                                var  infowindow = new AMap.AdvancedInfoWindow({
+                                    content: content,
+                                    offset: new AMap.Pixel(0, 0)
+                                });
+                                infowindow.open(map,lnglat)
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info wisdom-info">
+            <div class="objective text-center">实/现/医/生/价/值   助/力/智/慧/医/院</div>
+        </div>
+    </div>
+    <!-- main-footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Us -->
+                <div class="col-sm-4 col-md-5 col-lg-5">
+                    <div class="caption">
+                        <h3>联系方式<span>\ Contact Us</span></h3>
+                        <p>Add：重庆市渝北区百灵路盛世银座a区5幢14楼</p>
+                        <p>Tel：023-65813888</p>
+                        <br>
+                        <p>Eml：XXXXXXXXX@qq.com</p>
+                    </div>
+                </div>
+                <!-- About Us -->
+                <div class="col-sm-4 col-md-5 col-lg-5">
+                    <div class="caption">
+                        <h3>关于我们<span>\ About Us</span></h3>
+                        <p>重庆医生联盟是由30余位三甲医院专家共同出资组建的医生集团，目前有来自重庆市各大三甲公立医院的1000+优质医生资源。</p>
+                        <p><a href="#" class="btn btn-default" role="button">MORE</a></p>
+                    </div>
+                </div>
+                <!-- ercode -->
+                <div class="col-sm-4 col-md-2 col-lg-2">
+                    <div class="caption ercode">
+                        <h3>
+                            <img src="img/ercode.png" alt="扫一扫关注我们">
+                        </h3>
+                        <p>扫一扫关注我们</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright  备案-->
+    <div class="copyright">
+        Copyright(c)2015 All Rights Reserved. Powered By 医生联盟     渝ICP备15012849号-1           <a href="/"><img src="img/ghs.png" alt="渝公网安备 50010302000145号">渝公网安备 50010302000145号</a>
+    </div>
+</div>
+<script src="src/jquery-3.2.1.slim.min.js"></script>
+<script src="src/bootstrap.min.js?ver=3.3.7"></script>
+</body>
+</html>
